@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqnvoq70cmq7p"]
+
+[ext_resource type="Script" path="res://Créditos.gd" id="1_0j4ps"]
+[ext_resource type="Texture2D" uid="uid://cucm55bcvobyq" path="res://icon.svg" id="2_2ml4x"]
+
+[node name="Créditos" type="Node2D"]
+script = ExtResource("1_0j4ps")
+
+[node name="Volver" type="Button" parent="."]
+offset_left = 424.0
+offset_top = 403.0
+offset_right = 481.0
+offset_bottom = 434.0
+text = "Volver"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(222, 369)
+texture = ExtResource("2_2ml4x")

@@ -16,3 +16,5 @@ text = "Volver"
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(222, 369)
 texture = ExtResource("2_2ml4x")
+
+[connection signal="pressed" from="Volver" to="." method="_on_volver_pressed"]

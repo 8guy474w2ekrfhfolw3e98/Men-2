@@ -15,9 +15,9 @@ func _on_créditos_pressed():
 	pass # Replace with function body.
 	
 	
-	var change_scene3 = load("res://jugar.tscn")
+var change_scene3 = load("res://jugar.tscn")
 
 func _on_jugar_pressed():
-	get_tree(). change_scene_to_packed(change_scene)
+	get_tree(). change_scene_to_packed(change_scene3)
 	pass # Replace with function body.
 

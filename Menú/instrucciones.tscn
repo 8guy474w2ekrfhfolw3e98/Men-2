@@ -1,20 +1,21 @@
 [gd_scene load_steps=3 format=3 uid="uid://bbenuc5tq4gda"]
 
 [ext_resource type="Script" path="res://Instrucciones.gd" id="1_o36f7"]
-[ext_resource type="Texture2D" uid="uid://cucm55bcvobyq" path="res://icon.svg" id="2_ndaha"]
+[ext_resource type="Texture2D" uid="uid://c3k2kv363ulsj" path="res://que-es-una-galaxia-y-como-se-forman-estas-colonias-espaciales-1280x720.jpg" id="2_12rip"]
 
 [node name="Instrucciones" type="Node2D"]
 script = ExtResource("1_o36f7")
 
-[node name="Volver" type="Button" parent="."]
-offset_left = 414.0
-offset_top = 442.0
-offset_right = 471.0
-offset_bottom = 473.0
-text = "Volver"
-
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(569, 424)
-texture = ExtResource("2_ndaha")
+position = Vector2(575.5, 324)
+scale = Vector2(0.903906, 0.9)
+texture = ExtResource("2_12rip")
+
+[node name="Volver" type="Button" parent="."]
+offset_left = 581.0
+offset_top = 325.0
+offset_right = 638.0
+offset_bottom = 356.0
+text = "Volver"
 
 [connection signal="pressed" from="Volver" to="." method="_on_volver_pressed"]

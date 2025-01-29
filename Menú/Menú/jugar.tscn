@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdkwcw7dlvrw2"]
+
+[ext_resource type="Script" path="res://jugar.gd" id="1_b5lgh"]
+[ext_resource type="Script" path="res://Volver.gd" id="2_s0ppd"]
+[ext_resource type="Texture2D" uid="uid://cucm55bcvobyq" path="res://icon.svg" id="3_whjr6"]
+
+[node name="Jugar" type="Node2D"]
+script = ExtResource("1_b5lgh")
+
+[node name="Volver" type="Button" parent="."]
+offset_left = 395.0
+offset_top = 243.0
+offset_right = 452.0
+offset_bottom = 274.0
+text = "Volver"
+script = ExtResource("2_s0ppd")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(653, 370)
+texture = ExtResource("3_whjr6")
+
+[connection signal="pressed" from="Volver" to="." method="_on_volver_pressed"]

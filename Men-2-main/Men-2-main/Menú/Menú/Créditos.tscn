@@ -1,0 +1,42 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqnvoq70cmq7p"]
+
+[ext_resource type="Script" path="res://Créditos.gd" id="1_0j4ps"]
+[ext_resource type="Texture2D" uid="uid://cbh44smttf5rr" path="res://batalla-especial.webp" id="2_nopni"]
+
+[node name="Créditos" type="Node2D"]
+script = ExtResource("1_0j4ps")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(577, 323)
+scale = Vector2(0.90694, 0.975904)
+texture = ExtResource("2_nopni")
+
+[node name="TextEdit" type="TextEdit" parent="Sprite2D"]
+offset_left = -410.0
+offset_top = -124.0
+offset_right = 400.0
+offset_bottom = -71.0
+text = "https://www.shutterstock.com/image-photo/colorful-clouds-skydusk-sunset-sky-600nw-2477429939.jpg"
+
+[node name="TextEdit2" type="TextEdit" parent="Sprite2D"]
+offset_left = -346.219
+offset_top = -24.5926
+offset_right = 308.781
+offset_bottom = 28.4074
+text = "https://www.adslzone.net/app/uploads-adslzone.net/2018/03/batalla-especial.jpg"
+
+[node name="Volver" type="Button" parent="."]
+offset_left = 569.0
+offset_top = 549.0
+offset_right = 626.0
+offset_bottom = 580.0
+text = "Volver"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = 45.0
+offset_top = 393.0
+offset_right = 1146.0
+offset_bottom = 445.0
+text = "https://www.ngenespanol.com/wp-content/uploads/2023/03/que-es-una-galaxia-y-como-se-forman-estas-colonias-espaciales-1280x720.jpg"
+
+[connection signal="pressed" from="Volver" to="." method="_on_volver_pressed"]
